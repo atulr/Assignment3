@@ -1,0 +1,20 @@
+!SESSION 2011-09-21 19:13:13.133 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -keyring /Users/atulrungta/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.cpp.product -keyring /Users/atulrungta/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2011-09-21 19:14:05.567
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 4 2011-09-21 19:14:10.993
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+
+!ENTRY org.eclipse.core.resources 4 77 2011-09-21 19:16:40.945
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2011-09-21 19:16:40.945
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2011-09-21 19:16:40.945
+!MESSAGE /Users/atulrungta/dev/hwrt/LLVM_Trax/Assignment2 overlaps the workspace location: /Users/atulrungta/dev/hwrt/LLVM_Trax/Assignment2
