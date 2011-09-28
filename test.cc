@@ -24,8 +24,9 @@ int main()
 	Color color(1.0f, .3f, .2f);
 	Color background(0.f, 0.f, 0.f);
 	Color result;
-	
-	//Vector E(4.f, -15.f, -2.f); Uncomment this to get the first output
+
+	// Uncomment this to get the first output
+//	Vector E(4.f, -15.f, -2.f);
 
 	Vector E(0.5f, 0.5f, 0.5f);
 
