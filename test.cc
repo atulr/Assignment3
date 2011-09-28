@@ -25,7 +25,10 @@ int main()
 	Color background(0.f, 0.f, 0.f);
 	Color result;
 	
-	Vector E(4.f, -15.f, -2.f);
+	//Vector E(4.f, -15.f, -2.f); Uncomment this to get the first output
+
+	Vector E(0.5f, 0.5f, 0.5f);
+
 	Vector Up(0.f, 0.f, 1.f);
 	Vector Lookat(0.f, 0.f, 0.f);
 	Box box(Vector(-1.f, -1.f, -1.f), Vector(1.f, 1.f, 1.f));
