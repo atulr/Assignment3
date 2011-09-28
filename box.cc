@@ -34,8 +34,8 @@ float Box::max(float t1, float t2) {
 
 bool Box::intersects(Ray ray) {
 	float tx1, tx2, ty1, ty2, tz1, tz2, tnear, tfar;
-	tnear = - 999999999999.f;
-	tfar = 999999999999.f;
+	tnear = -9999999999.f;
+	tfar = 9999999999.f;
 
 	tx1 = (float)(P1.getx() - ray.get_origin().getx())/ ray.get_direction().getx();
 	tx2 = (float)(P2.getx() - ray.get_origin().getx())/ ray.get_direction().getx();
@@ -51,9 +51,6 @@ bool Box::intersects(Ray ray) {
 	ty1 = (float)(P1.gety() - ray.get_origin().gety())/ ray.get_direction().gety();
 	ty2 = (float)(P2.gety() - ray.get_origin().gety())/ ray.get_direction().gety();
 
-	tnear = - 999999999999.f;
-	tfar = 999999999999.f;
-
 	if (ty1 > ty2)
 		swap(ty1, ty2);
 	if (ty1 > tnear)
@@ -66,9 +63,6 @@ bool Box::intersects(Ray ray) {
 	tz1 = (float)(P1.getz() - ray.get_origin().getz())/ ray.get_direction().getz();
 	tz2 = (float)(P2.getz() - ray.get_origin().getz())/ ray.get_direction().getz();
 
-	tnear = - 999999999999.f;
-	tfar = 999999999999.f;
-
 	if (tz1 > tz2)
 		swap(tz1, tz2);
 	if (tz1 > tnear)
@@ -78,9 +72,7 @@ bool Box::intersects(Ray ray) {
 	if (tnear > tfar || tfar < 0)
 		return false;
 
-//	if (max(min(tx1, tx2), min(ty1, ty2)) <= t && t <= min(max(tx1, tx2), max(ty1, ty2)))
 		return true;
-//return false;
 }
 
 
